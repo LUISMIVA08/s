@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras grutas | Grutas erigidas en honor a Madre del Buen Consejo 
+</title>
+  <link rel="icon" type="image/jpg" href="icono.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+      html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+    
+    header {
+      background-color: #d3c6b4;
+      padding: 35rem 36rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+    }  
+    .header-text {
+      font-size: 3vw;
+      font-weight: 900;
+      margin: 0;
+      top: 14vh;
+      left: 12vw ;
+      position: absolute;
+    }
+    .header2-text {
+      font-size: 1.54vw;
+      font-weight: 900;
+      font-family: 'Lucida Sans Unicode';
+      margin: 0;
+      top: 25vh;
+      left: 12vw ;
+      position: absolute;
+    }
+    .logo {
+      position: absolute;
+      top: 6vw;
+      right: 10vw;
+      width: 600px; 
+      height: auto;
+    }
+    .botones {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+      top: 6vw;
+      left: 20rem;
+      position: absolute;
+    }
+
+    .botones a {
+      padding: 10px 20px;
+      border-radius: 50px;
+      background-color: #444;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .botones a:hover {
+      background-color: #9c7d5b;
+    }
+  @media (max-width: 768px) {
+    .header-text {
+      font-size: 2rem;
+      top: 12rem;
+      left: 2rem;
+    }
+
+    .header2-text {
+      font-size: 1rem;
+      top: 16rem;
+      left: 2rem;
+    }
+
+    .logo {
+      top: 80vw;
+      left: 50%;                       
+      transform: translateX(-50%); 
+      width: 670px;
+    }
+    
+    .botones {
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .botones a {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  } 
+
+  @media (max-width: 480px) {
+    .header-text {
+      font-size: 15vw;
+      top: 10vh;
+      left: 3vw;
+    }
+    .logo {
+      top: 100vw;
+      left: 50%;                       
+      transform: translateX(-50%); 
+      width: 300px;
+    }
+    .header2-text {
+      font-size: 4vw;
+      top: 30vh;
+      left: 3vw;
+    }
+    .botones {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      top: 1rem;
+      left: 1vh;
+      margin-bottom: 1rem;
+    }
+    .botones a {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+    .bottom-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      padding: 0.5rem ;
+      margin-top: 3rem;
+    }
+    .bottom-nav a {
+      padding: 10px 20px;
+      border-radius: 50px;
+      background-color: #444;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .bottom-nav a:hover {
+        background-color: #9c7d5b;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    .center {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+    .center-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .left {
+      text-align: left;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .justificado-texto {
+      text-align: justify;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+
+    img {
+        max-width: 480px; 
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #scrollProgress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 6px;
+        background: #000000;
+        z-index: 9999;
+        transition: width 0.25s ease-out;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="botones">
+      <a href="index.html">Inicio</a>
+      <a href="plegaria.html">Plegaria</a>
+      <a href="https://www.madredelbuonconsiglio.it/?sfnsn=scwspmo" target="_blank">Página Oficial</a>
+    </div>
+    <img src="madre.png" alt="logo" class="logo">
+    <h1 class="header-text">Nuestras Grutas </h1>
+    <h2 class="header2-text">Patrona de la Obra, Padres, Hermanas y Discípulos del Buen Consejo</h2>
+  </header>
+
+  <div id="scrollProgress"></div>
+
+  <main>
+    <section>
+      <h2 class="section-title">Primera gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Al suroeste del departamento de Antioquia, en el corregimiento Altamira de Betulia, Vereda San Mateo (Arquidiócesis de Santa Fe de Antioquia).</a> </p>
+      <p class="left">Parroquia a la que pertenece: Santa Teresa de Jesús, Altamira.  </p>
+      <p class="left">Fecha de bendición: 26 diciembre 2021 a las 11 a.m.  </p>
+      <p class="left">Presbítero que la bendijo: Padre Iván de Jesús Ochoa Londoño (Padre fundador). </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="primera.jpeg" alt="Primera gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Segunda gruta</h2>
+      <p class="left">País: Costa Rica. </p>
+      <p class="left">Ubicación: Provincia de Puntarenas en la ciudad de Quepos. Sector Rancho Grande, en las instalaciones de la Parroquia (Diócesis de Puntarenas). </p>
+      <p class="left">Parroquia a la que pertenece: Inmaculada Concepción de María.  </p>
+      <p class="left">Fecha de bendición: 23 de Octubre del 2022 a las 9:00 a.m.  </p>
+      <p class="left">Presbítero que la bendijo: Rolando Zanabria Romero. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="segunda.jpeg" alt="Segunda gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Tercera gruta</h2>
+      <p class="left">País: Estados Unidos. </p>
+      <p class="left">Ubicación: Estado de Texas, San Antonio. 668 granite cliff 78251  (Arquidiócesis de San Antonio). </a></p>
+      <p class="left">Parroquia a la que pertenece: María Nuestra Madre de PHARIS.  </p>
+      <p class="left">Fecha de bendición: 14 de Marzo del 2023 a las 10:00 a.m.  </p>
+      <p class="left">Presbítero que la bendijo: Martín Leopoid. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="tercer.jpeg" alt="Tercera gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Cuarta gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, Municipio El Retiro, Vereda de los Salados (Diócesis de Sonsón - Rionegro).</a></p>
+      <p class="left">Parroquia a la que pertenece: Sagrado Corazón de Jesús.  </p>
+      <p class="left">Fecha de bendición: 12 de Mayo del 2023 a las 3 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Favio Alonso Gómez. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="cuarto.jpeg" alt="Cuarta gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Quinta gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, Municipio San Pedro de los Milagros, cabecera municipal sector Los Nogales carrera 49 # 38- 117 al frente de la subestación de gas (Diócesis de Santa Rosa de Osos). </a></p>
+      <p class="left">Parroquia a la que pertenece: El Señor de los Milagros.  </p>
+      <p class="left">Fecha de bendición: 13 de Mayo del 2023 7 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Esteban Sosa. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="quinta.jpeg" alt="Quinta gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Sexta gruta</h2>
+      <p class="left">País: México. </p>
+      <p class="left">Ubicación: Estado de Zacatecas, municipio de Tlaltenango, Colonia Los Villarreales (Diócesis de Zacatecas). </p>
+      <p class="left">Parroquia a la que pertenece: Nuestra Señora de Guadalupe.  </p>
+      <p class="left">Fecha de bendición: 20 de Julio del 2023 4:00 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Raul Hurtado Luján. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="Sexta.jpeg" alt="Sexta gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Séptima gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Córdoba, ciudad de Montería, Vereda California. Corregimiento de Mocarí (Diócesis de Montería). </p>
+      <p class="left">Parroquia a la que pertenece: San José de Mocarí.  </p>
+      <p class="left">Fecha de bendición: 12 de febrero del 2024 a las 4:00 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Orlando López Rivera. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="Septima.jpeg" alt="Séptima gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Octava gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, Distrito de Medellín, Corregimiento San Cristóbal Bella Vista parte alta, Hogar de Jesús (Arquidiócesis de Medellín). </p>
+      <p class="left">Parroquia a la que pertenece: San Vicente Ferrer.  </p>
+      <p class="left">Fecha de bendición: 26 de Abril del 2024 a las 2:00 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Eduard Alexander Soto Patiño. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="octava.jpeg" alt="octava gruta">
+    </section>
+
+    
+    <section>
+      <h2 class="section-title">Novena gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Magdalena, ciudad de Santa Marta, Calle 28 A # 6 B -59 Taminaca (Diócesis de Santa Marta). </p>
+      <p class="left">Parroquia a la que pertenece: La Eucaristía.  </p>
+      <p class="left">Fecha de bendición: 26 de Abril del 2024 a las 3 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: José Antonio Díaz Hernández. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="novena.jpeg" alt="novena gruta">
+    </section>
+
+    
+    <section>
+      <h2 class="section-title">Décima gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, Distrito de Medellín, barrio Manrique Oriental, Carrera 36 # 70- 74 (Arquidiócesis de Medellín). </p>
+      <p class="left">Parroquia a la que pertenece: Santa Ana.  </p>
+      <p class="left">Fecha de bendición: 26 de Abril del 2024 a las 7 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Dilan Gonzalo Tamayo. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decima.jpeg" alt="décima gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Décimo primera gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, Distrito de Medellín, Corregimiento San Cristóbal La Loma, junto al atrio de la Parroquia (Arquidiócesis de Medellín). </p>
+      <p class="left">Parroquia a la que pertenece: San Vicente Ferrer.  </p>
+      <p class="left">Fecha de bendición: 28 de Abril del 2024 a las 2:00 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Eduard Alexander Soto Patiño. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decimo1.jpeg" alt="décimo primera gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Décima segunda gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, municipio de Venecia suroeste Antioqueño, barrio obrero parte baja Calle 47a - con carrera 52 (Diócesis de caldas). </p>
+      <p class="left">Parroquia a la que pertenece: Santuario San José de Venecia.  </p>
+      <p class="left">Fecha de bendición: 14 de Mayo del 2024 a las 7:00 p.m.  </p>
+      <p class="left">Presbítero que la bendijo: Cesar Augusto Rodríguez Castaño. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decima2.jpeg" alt="décima segunda gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Décimo tercera gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, municipio de Envigado - las Lomas.</a> </p>
+      <p class="left">Parroquia a la que pertenece: Nuestra señora de las Lomas.  </p>
+      <p class="left">Fecha de bendición: 21 de Mayo del 2024 a las 6 p.m. (celebración Eucaristía en su honor).  </p>
+      <p class="left">Presbítero que la bendijo: Rubén Darío Ospina Gil. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decimo3.jpeg" alt="décimo tercera gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Décima cuarta gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, municipio de Barbosa, Corregimiento El atillo, vereda el Paraíso (Diócesis de Girardota). </p>
+      <p class="left">Parroquia a la que pertenece: Sagrado Corazón de Jesús.  </p>
+      <p class="left">Fecha de bendición: Sagrado Corazón de Jesús. </p>
+      <p class="left">Presbítero que la bendijo: Pedro Nel Torres Valencia. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decima4.jpeg" alt="décima cuarta gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Décima quinta gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Sucre, municipio de San Onofre, corregimiento Rincón del Mar.</a></p>
+      <p class="left">Parroquia a la que pertenece: Nuestra Señora del Mar.  </p>
+      <p class="left">Fecha de bendición:  8 de Diciembre del 2024 a las 10 a.m.</p>
+      <p class="left">Presbítero que la bendijo: Wilson Morales Suarez. </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decima5.jpeg" alt="décima quinta gruta">
+    </section>
+
+    <section>
+      <h2 class="section-title">Décimo sexta gruta</h2>
+      <p class="left">País: Colombia. </p>
+      <p class="left">Ubicación: Departamento de Antioquia, municipio de Jardín, entrada a la vereda Morro Amarillo.</a> </p>
+      <p class="left">Parroquia a la que pertenece: Basílica Menor de la Inmaculada Concepción.  </p>
+      <p class="left">Fecha de bendición: </p>
+      <p class="left">Presbítero que la bendijo:  </p>
+      <p class="left">Apoyo incondicional de:  </p>
+       <img src="decima6.jpg" alt="décimo sexta gruta">
+    </section>
+    <div class="bottom-nav">
+         <a href="grutas.html">Volver</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contacto: hermanasdelbuenconsejo@gmail.com | Tel. (604) 358 6195 | Cel. 320 687 4993</p>
+    <p>© 2025 Padres, Hermanas y Discípulos del Buen Consejo</p>
+    <div class="social-icons">
+    <a href="https://www.facebook.com/Comunidadhermanasbuenconsejo/?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/@hermanasdelbuenconsejo" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </footer>
+
+  <script>
+    window.onscroll = function () {
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (scrollTop / scrollHeight) * 100;
+      document.getElementById("scrollProgress").style.width = scrolled + "%";
+    };
+  </script>
+</body>
+</html>
+
+

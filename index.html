@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Grutas erigidas en honor a Madre del Buen Consejo 
+</title>
+  <link rel="icon" type="image/jpg" href="icono.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      overflow-x: hidden;
+      font-family: sans-serif;
+    }
+    
+    header {
+      background-color: #d3c6b4;
+      padding: 35rem 36rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+    }  
+    .header-text {
+      font-size: 3vw;
+      font-weight: 900;
+      margin: 0;
+      top: 14vh;
+      left: 20vw ;
+      position: absolute;
+    }
+    .header2-text {
+      font-size: 1.54vw;
+      font-weight: 900;
+      font-family: 'Lucida Sans Unicode';
+      margin: 0;
+      top: 30vh;
+      left: 20vw ;
+      position: absolute;
+    }
+    .logo {
+      position: absolute;
+      top: 6vw;
+      right: 20vw;
+      width: 600px; 
+      height: auto;
+    }
+    .botones {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+      top: 6vw;
+      left: 20rem;
+      position: absolute;
+    }
+
+    .botones a {
+      padding: 10px 20px;
+      border-radius: 50px;
+      background-color: #444;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .botones a:hover {
+      background-color: #9c7d5b;
+    }
+  @media (max-width: 768px) {
+    .header-text {
+      font-size: 2rem;
+      top: 8rem;
+      left: 2rem;
+    }
+
+    .header2-text {
+      font-size: 1rem;
+      top: 14rem;
+      left: 2rem;
+    }
+
+    .logo {
+      top: 80vw;
+      left: 50%;                       
+      transform: translateX(-50%); 
+      width: 670px;
+    }
+    
+    .botones {
+      flex-direction: row;
+      justify-content: flex-start;
+      top: 2rem;
+      left: 1rem;
+      gap: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .botones a {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header-text {
+      font-size: 15vw;
+      top: 15vh;
+      left: 3vw;
+    }
+
+    .header2-text {
+      font-size: 4vw;
+      top: 75vh;
+      left: 3vw;
+    }
+    .botones {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      top: 1rem;
+      left: 0rem;
+      gap: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .botones a {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+    .bottom-nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        padding: 0.5rem ;
+        margin-top: 3rem;
+    }
+    .bottom-nav a {
+      padding: 10px 20px;
+      border-radius: 50px;
+      background-color: #444;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .bottom-nav a:hover {
+        background-color: #9c7d5b;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    .center {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    .center-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .justificado {
+      text-align: justify;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .justificado-texto {
+      text-align: justify;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    .social-icons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 2rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    #scrollProgress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 6px;
+        background: #000000;
+        z-index: 9999;
+        transition: width 0.25s ease-out;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="botones">
+      <a href="plegaria.html">Plegaria</a>
+      <a href="https://es.churchpop.com/8-datos-sobre-nuestra-senora-del-buen-consejo-la-devocion-mariana-del-papa-leon-xiv/?sfnsn=scwspmo" target="_blank">Datos sobre Nuestra Señora del Buen Consejo</a>
+      <a href="https://www.madredelbuonconsiglio.it/?sfnsn=scwspmo" target="_blank">Página Oficial</a>
+      <a href="padres-agustinos.html">¿Quiénes son los Padres Agustinos?</a>
+      <a href="grutas.html">Nuestras grutas</a>
+    </div>
+    <h1 class="header-text">Grutas erigidas en honor a Madre del Buen Consejo </h1>
+    <h2 class="header2-text">Patrona de la Obra, Padres, Hermanas y Discípulos del Buen Consejo</h2>
+  </header>
+
+    <div id="scrollProgress"></div>
+
+  <main>
+    <section>
+      <h2 class="center-title">Carta del Padre Fundador</h2>
+      <p class="center">El señor les Conceda la Salud. <p class="center"> A ustedes Padres, Hermanas, Discípulos del Buen Consejo y lectores en general.<p class="justificado">En la gracia de Nuestro Señor Jesucristo, en el amor del Padre y en la Comunión del Espíritu Santo, les entrego el texto que contiene el sentido profundo, espiritual desde la fe, el amor a la Santísima Virgen y las indicaciones pertinentes acerca de Erigir una Gruta en honor a Madre del Buen Consejo, desde las actividades apostólicas de la Obra Padres, Hermanas, Discípulos del Buen Consejo.<p class="justificado">“Hacer lo que él les diga”, así como María nos invita a una práctica de Obediencia total, en ese mismo sentido, una gruta en su honor es un verdadero apostolado mariano, que llena de gracia a la comunidad donde se encuentre, que por medio de su Intercesión se alcanza el favor de su Hijo Jesucristo, y desde allí se promueve las indulgencias desde el Santo Rosario, la plegaria a la Madre, la Sagrada Eucaristía y la vida activa de los sacramentos en la Iglesia.<p class="justificado">Les exhorto, desde el DON DE CONSEJO mismo, a responder al llamado del SEÑOR, puede ser ejerciendo una o varias Actividades Apostólicas, o en su camino de vida, pertenecer a una de las ramas que conforman la Obra. <p class="justificado">
+      Que cada día, puedas discernir y vivir en obediencia la voluntad de Dios en pequeñez y celo por el carisma Don de Consejo.<p class="center">Dios les Bendiga<p class="center">Padre Iván de Jesús Ochoa Londoño<p class="center">(Padre fundador)</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">En qué consiste erigir una GRUTA</h2>
+      <p class="justificado-texto">En la obra Padres, Hermanas y Discípulos del buen Consejo como parte de la Expansión de la misma, tenemos varias grutas erigidas en diferentes partas del mundo, en su mayoría en nuestro país Colombia, donde no solo es tener el espacio sino también tener en cuenta, las siguientes indicaciones: </p>
+        <ul class="justificado-texto">
+        <li>Dar a conocer la Advocación, para que la Madre del Buen Consejo sea conocida, amada y servida.</li>
+        <p></p>
+        <li>Que sean públicas.</li>
+        <p></p>
+        <li>Tener un sacerdote vinculado a la gruta, para asegurar la misa y la bendición.</li>
+        <p></p>
+        <li>Un rosario semanal y una eucaristía el 26 de cada mes.</li>
+        <p></p>
+        <li>Que se forme una comunidad de discípulos alrededor de la gruta, para extender el carisma. Nota: de no existir la comunidad discipular todavía, será la comunidad Cristiana quien asuma estas acciones apostólicas de la Obra Padres, Hermanas y Discípulos del Buen Consejo.</li>
+        <p></p>
+        <li>Organizar peregrinaciones a la gruta.</li>
+        <p></p>
+        <li>Imagen en cuadro (no en bulto), proporcional a la gruta en el espacio donde se va a colocar.</li>
+        </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">¿Qué son las Peregrinaciones?</h2>
+      <p class="justificado-texto"><strong>R/</strong> Se conoce bajo el término peregrinación a aquellos recorridos y viajes que realiza una persona desde un punto cualquiera hacia un santuario, templo o lugar santo. </p>
+      <p class="justificado-texto">En la Obra Padres, Hermanas y Discípulos del Buen Consejo, El peregrinaje o peregrinación es una muestra más del sacrificio que realiza el Discípulo en honor a la Virgen María en su advocación Madre del Buen Consejo, en consecuencia, para la Obra peregrinar es misionar. Para las peregrinaciones de la Obra en honor a la Virgen María en su advocación Madre del Buen Consejo, se sugieren los siguientes pasos:</p>
+      <h2 class="section-title">Paso 1</h2>
+      <p class="justificado-texto">Se encuentran en un lugar de la Obra.</p>
+      <h2 class="section-title">Paso 2</h2>
+      <p class="justificado-texto">Se motiva a la luz de la Palabra de Dios.</p>
+      <h2 class="section-title">Paso 3</h2>
+      <p class="justificado-texto">Se forma sobre el sentido de la peregrinación a realizar.</p>
+      <h2 class="section-title">Paso 4</h2>
+      <p class="justificado-texto">Se recibe la Bendición para partir hacia el lugar de peregrinación.</p>
+      <h2 class="section-title">Paso 5</h2>
+      <p class="justificado-texto">Los peregrinos se ponen en camino, orando, cantando, conviviendo, conociendo.</p>
+      <h2 class="section-title">Paso 6</h2>
+      <p class="justificado-texto">La Peregrinación, finalmente, no concluye al llegar al santuario o meta de la peregrinación y de participar en los actos Litúrgicos o de devoción, o en firmar el libro de peregrinos, o de adquirir algunos recuerdos como estampas, medallas, agua bendita, entre otros. “Se trata y debe tratarse de cobrar nuevo vigor e impulso para llevar y hacer presente la gracia de Dios al volver a casa. Entusiasmar y alegrar a los miembros de la familia, de la comunidad que no pudieron asistir. Se trata, ante todo, de extender el Reino de Dios: Una nueva evangelización nueva en su impulso, nueva en sus métodos, nueva en su ardor"</p>
+
+    </section>
+
+    <section>
+        <h2 class="section-title"></h2>
+    </section>
+
+    <div class="bottom-nav">
+      <a href="index.html">Volver</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contacto: hermanasdelbuenconsejo@gmail.com | Tel. (604) 358 6195 | Cel. 320 687 4993</p>
+    <p>© 2025 Padres, Hermanas y Discípulos del Buen Consejo</p>
+    <div class="social-icons">
+    <a href="https://www.facebook.com/Comunidadhermanasbuenconsejo/?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.youtube.com/@hermanasdelbuenconsejo" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </footer>
+
+  <script>
+    window.onscroll = function () {
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (scrollTop / scrollHeight) * 100;
+      document.getElementById("scrollProgress").style.width = scrolled + "%";
+    };
+  </script>
+</body>
+</html>
+
+
